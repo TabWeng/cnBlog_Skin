@@ -1,0 +1,1185 @@
+/********************************************************************
+第一部分
+********************************************************************/
+
+/********************************************************************
+第二部分：全局样式；
+********************************************************************/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/*background-color: #EBEBEB;*/
+	background-image: url("http://images.cnblogs.com/cnblogs_com/hlwyfeng/783931/o_o_debut-light.png");
+	/*background-image: url("http://images.cnblogs.com/cnblogs_com/hlwyfeng/783931/o_gezhi.jpg");*/
+}
+
+ul {
+	list-style: none;
+}
+
+/********************************************************************
+第三部分：各个页面的元素样式；
+********************************************************************/
+#home {
+	margin: 0 auto;
+	width: 80%;
+	min-width: 930px;
+}
+
+#header {
+	/*background-color: #EE799F; */
+	/*position: absolute;*/
+	margin-top: 30px;
+}
+
+/***********************
+头部标题模块 begin
+***********************/
+
+/*风景背景图*/
+#blogTitle {
+	/*background-color: #EE0000;*/
+	position: absolute;
+	left:0;
+	top:0;
+
+	background-size: 100% 100%;
+	width: 100%;
+	height:260px;
+
+	background-image: url("http://images.cnblogs.com/cnblogs_com/hlwyfeng/783931/o_%e8%83%8c%e6%99%af%e5%9b%be1.png");
+	background-repeat: no-repeat;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+}
+
+#blogTitle:hover {
+	opacity: 1;
+	filter:alpha(opacity=80);
+}
+
+
+#blogTitle h1 {
+	position: relative;
+	display: inline;
+	left:380px;
+	top:200px;
+	z-index: 10000;
+}
+
+#blogTitle h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+/*设置头像的透明模块*/
+#blogTitle h2 {
+	position: relative;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 33px;
+	color: #1874CD;
+	width: 62.5%;
+	height: 86px;
+	opacity: 0.5;
+	padding-left: 240px;
+	padding-top: 100px;
+
+	font-size: 30px;
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+}
+
+#blogTitle h2:hover {
+	opacity: 0;
+}
+
+/*自定义头像*/
+#myHeadPic {
+	position: absolute;
+	left: 40px;
+	top: -280px;
+	border-radius: 10px;
+}
+
+/***********************
+头部标题模块 end
+***********************/
+
+/***********************
+头部菜单栏 begin
+***********************/
+/*div*/
+#navigator {
+	background-color: #fff;
+	float:left;
+	width:100%;
+	margin-top: 300px;
+
+	box-shadow: 1px 1px 0 #BABABA;
+	-webkit-box-shadow: 1px 1px 0 #BABABA;
+	-moz-box-shadow: 1px 1px 0 #BABABA;
+}
+
+/*ul*/
+#navList {
+	display: block;
+	list-style: none;
+}
+
+#navList li{
+	background-color: #FFFFFF;
+	position: relative;
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	/*margin-right: 2px;*/
+}
+
+#navList li a {
+	/*border-right: 1px solid #DEDEDE;*/
+	padding:22px 20px;
+	text-decoration: none;
+	color:#919191;
+}
+
+/*导航栏变色*/
+#navList li a:hover {
+	background-color: #1E90FF;
+	color: #fff;
+
+	box-shadow: 0 0 10px  #575757;
+	-webkit-box-shadow: 0 0 10px #575757;
+	-moz-box-shadow: 0 0 10px #575757;
+}
+
+/*去掉订阅图标*/
+.aHeaderXML {
+	display: none;
+}
+
+/*不显示统计信息*/
+.blogStats {
+	display: none;
+}
+
+/*不显示管理*/
+#MyLinks1_Admin {
+	display: none;
+}
+
+/*不显示博客园*/
+#MyLinks1_HomeLink {
+	display: none;
+}
+
+/*二级菜单*/
+.secContent {
+	display: none;
+	font-size: 14px;
+	width:104px;
+}
+
+#navList li:hover .secContent {
+	display: block;
+}
+
+.secContent li{
+	float: none;
+	clear: both;
+	text-align: center;
+	z-index: 100; 
+	width: 104px;
+	border-bottom: 1px solid #D1D1D1;
+	border-left: 1px solid #BABABA;
+	border-right: 1px solid #BABABA;
+}
+
+#navList .secContent a {
+	padding: 10px;
+}
+
+
+/***********************
+头部菜单栏 end
+***********************/
+
+/***********************
+Main部分
+***********************/
+
+#main {
+	position: relative;
+	float: left;
+	margin-top: 30px;
+}
+
+/*************
+首页内容部分
+*************/
+
+#mainContent {
+
+	float: left;
+	background-image: url("http://images.cnblogs.com/cnblogs_com/hlwyfeng/783931/o_o_debut-light.png");
+	width: 72%;
+}
+
+/*去掉置顶*/
+/*#homepage1_HomePageDays_ctl00_ImageLink {
+	display: none;
+}*/
+
+/*每篇随笔, 随笔列表*/
+.day, .entrylistItem {
+	padding: 0 30px 30px 30px;
+	background-color: #fff;
+	margin-bottom: 30px;
+
+	box-shadow: 1px 1px 8px #BABABA;
+	-webkit-box-shadow: 1px 1px 8px #BABABA;
+	-moz-box-shadow: 1px 1px 8px #BABABA;
+}
+
+.entrylistItem {
+	padding-top: 30px;
+	margin-top: 20px;
+}
+
+.entrylistTitle {
+	font-family: "STFangsong";
+	color: #CD6090;
+}
+
+/*图片大小限制显示*/
+.desc_img {
+	width: 250px;
+	height: 175px;
+	margin: 10px;
+}
+
+/*日期*/
+.dayTitle {
+	position: relative;
+	top:-10px;
+	left:-50px;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	background-color: #CD6090;
+	text-align: center;
+
+	box-shadow: 0 0 4px #CD3278;
+	-webkit-box-shadow: 0 0 4px #CD3278;
+	-moz-box-shadow: 0 0 4px #CD3278;
+}
+
+.dayTitle a {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+/*标题*/
+.postTitle, .entrylistPosttitle {
+	margin-top: 5px;
+}
+
+.postTitle a, .entrylistPosttitle a{
+	text-decoration: none;
+	font-size: 15pt;
+	color: #474747;
+
+	-webkit-transition: background-color 1s, color 1s;
+	-moz-transition: background-color 1s, color 1s;
+}
+
+.postTitle a:hover, .entrylistPosttitle a:hover{
+	color: #CD3278;
+}
+
+/*摘要*/
+.postCon, .entrylistPostSummary {
+	margin-top: 10px;
+}
+
+.c_b_p_desc {
+	color: #7D7D7D;
+	font-size: 11pt;
+}
+
+/*阅读全文*/
+.postCon a, .entrylistPostSummary a{
+	color: #9E9E9E;
+	font-size: 12pt;
+	text-decoration: none;
+	border-bottom: 1px dotted #CD6090;
+	color:#CD6090;
+}
+
+/*信息*/
+.postDesc, .entrylistItemPostDesc{
+	padding: 20px 0;
+	border-bottom: 1px dotted #CD6090;
+	color: #A3A3A3;
+	text-align: right;
+	font-size: 10pt;
+}
+
+.postDesc a,.entrylistItemPostDesc a{
+	color: #6495ED;
+	font-size: 10pt;
+	border-bottom: 1px dotted #6495ED;
+}
+
+/*下一页按钮*/
+/*#nav_next_page {
+	width:800px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #DB7093;
+	border-radius: 3px;
+	text-align: right;
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+}*/
+/*
+#nav_next_page:hover {
+	background-color: #DC143C;
+}*/
+
+#nav_next_page a{
+
+	padding: 10px 20px;
+	background-color: #DB7093;
+	border-radius: 3px;
+	text-align: right;
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+
+	color: #fff;
+	text-decoration:none;
+}
+
+#nav_next_page a:hover {
+	background-color: #DC143C;
+}
+
+/*************
+侧边栏
+*************/
+#sideBar {
+	margin: 0;
+	padding: 0;
+	float: right;
+	/*background-color: #EBEBEB;*/
+	background-image: url("http://images.cnblogs.com/cnblogs_com/hlwyfeng/783931/o_o_debut-light.png");
+	width: 25%;
+}
+
+/*公告标题隐藏*/
+.newsItem h3 {
+	display: none;
+}
+
+/*日期隐藏*/
+#calendar {
+	display: none;
+}
+
+/*加关注栏*/
+#profile_block {
+	margin-bottom:80px;
+	background-color: #fff;
+
+	box-shadow: 1px 1px 8px #BABABA;
+	-webkit-box-shadow: 1px 1px 8px #BABABA;
+	-moz-box-shadow: 1px 1px 8px #BABABA;
+
+	color:#787878;
+	font-weight: 200;
+
+	font-size: 11pt;
+	padding: 30px;
+
+}
+
+#profile_block a {
+	height: 20px;
+	line-height: 20px;
+	text-decoration: none;
+	color:#BDB76B; /*金色*/
+	font-weight: 200;
+
+	font-size: 11pt;
+
+}
+
+/*加关注单独取出*/
+#p_b_follow {
+	position: absolute;
+	padding: 10px 0;
+	width: 25%;
+
+	margin-top: 50px;
+	background-color: #fff;
+	margin-bottom: 30px;
+	margin-left: -30px; /*对齐*/
+	text-align: center;	
+
+	-webkit-transition: background-color 1s, color 1s;
+	-moz-transition: background-color 1s, color 1s;
+
+	box-shadow: 1px 1px 8px #BABABA;
+	-webkit-box-shadow: 1px 1px 8px #BABABA;
+	-moz-box-shadow: 1px 1px 8px #BABABA;
+}
+
+#p_b_follow a{
+	/*display: block;*/
+	position: relative;
+	text-align: center;	
+}
+
+#p_b_follow a:hover {
+	color: #fff;
+}
+
+#p_b_follow:hover {
+	background-color: #CD3278;
+}
+
+
+/*我的标签*/
+
+.catListTag ul {
+	padding: 0 10px;
+}
+
+.catListTag li{
+	display: block;
+	float:left;
+	background-color: #CD3278;
+	margin: 5px;
+	color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 12pt;
+}
+
+.catListTag li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/*随笔分类、随笔档案、常用链接、文章分类、相册*/
+.catListPostCategory,
+.catListPostArchive,
+.catListLink,
+.catListArticleArchive,
+.catListImageCategory,
+.catListTag
+{
+	margin-bottom:20px;
+	background-color: #fff;
+
+	box-shadow: 1px 1px 8px #BABABA;
+	-webkit-box-shadow: 1px 1px 8px #BABABA;
+	-moz-box-shadow: 1px 1px 8px #BABABA;
+	clear: both;
+}
+
+.catListTag {
+	height: 320px;
+}
+
+.catListPostCategory li,
+.catListPostArchive li,
+.catListLink li,
+.catListArticleArchive li,
+.catListImageCategory li
+{
+	border-top: 1px solid #EBEBEB; 
+	/*height: 45px;*/
+	/*line-height: 45px;*/
+}
+
+.catListPostCategory li a, 
+.catListPostArchive li a,
+.catListLink li a,
+.catListArticleArchive li a,
+.catListImageCategory li a
+{
+	display: block;
+	margin: 10px 10px 0 30px;
+	text-decoration: none;
+	color: #787878;
+	font-weight:200;
+	padding-bottom: 10px;
+}
+
+.catListPostCategory li a:hover, 
+.catListPostArchive li a:hover,
+.catListLink li a:hover,
+.catListArticleArchive li a:hover,
+.catListImageCategory li a:hover
+{
+	color:#BDB76B; /*金色*/
+}
+
+/*大标题*/
+.catListTitle {
+	height: 55px;
+	line-height: 65px;
+	margin-left: 30px;
+	color: #787878;
+	font-weight: 200;
+}
+
+
+/*最新随笔,留言簿, 我的榜样, 阅读排行榜, 评价排行榜*/
+.catListEssay,
+.catListNoteBook,
+#sidebar_links690730,
+.catListView,
+.catListFeedback
+{
+	background-color: #fff;
+	margin-bottom: 20px;
+	box-shadow: 1px 1px 8px #BABABA;
+	-webkit-box-shadow: 1px 1px 8px #BABABA;
+	-moz-box-shadow: 1px 1px 8px #BABABA;
+}
+
+.catListEssay ul,
+.catListNoteBook ul,
+#sidebar_links690730,ul,
+.catListView,ul,
+.catListFeedback,ul
+{
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+
+.catListEssay li,
+.catListNoteBook li,
+#sidebar_links690730 li,
+.catListView li,
+.catListFeedback li
+{
+	margin: 0px 30px 0 30px;
+	border-bottom: 1px solid #EBEBEB;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.catListEssay li a ,
+.catListNoteBook li a,
+#sidebar_links690730 li a,
+.catListView li a,
+.catListFeedback li a
+{
+	/*margin-top: 20px;*/
+	text-decoration: none;
+	font-size: 11pt;
+
+	color: #787878;
+	font-weight: 200;
+}
+
+.catListEssay li a:hover,
+.catListNoteBook li a:hover,
+#sidebar_links690730 li a:hover,
+.catListView li a:hover,
+.catListFeedback li a:hover
+{
+	border-bottom: 1px dotted #CD6090; 
+	color: #CD6090;
+}
+
+/*最新评论*/
+.catListComment {
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+
+	box-shadow: 1px 1px 8px #BABABA;
+	-webkit-box-shadow: 1px 1px 8px #BABABA;
+	-moz-box-shadow: 1px 1px 8px #BABABA;
+}
+
+/*ul上面的div*/
+#RecentCommentsBlock {
+	padding: 10px 30px;
+}
+
+/*评论标题*/
+.recent_comment_title {
+	margin: 5px 0px;
+}
+
+.recent_comment_title a {
+	color: #787878;
+	font-size: 11pt;
+	text-decoration: none;
+}
+
+.recent_comment_title a:hover {
+	border-bottom: 1px dotted #CD6090;
+	color: #CD6090;
+}
+
+/*评论内容*/
+.recent_comment_body {
+	color: #8B8989;
+	font-weight: 100;
+	font-size: 10pt;
+}
+
+.recent_comment_author{
+	color: #8B8989;
+	font-weight: 100;
+	text-align: right;
+	margin-bottom: 5px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #EBEBEB;
+	font-size: 10pt;
+}
+
+/*搜索框*/
+#sidebar_search.mySearch {
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+
+	box-shadow: 1px 1px 8px #BABABA;
+	-webkit-box-shadow: 1px 1px 8px #BABABA;
+	-moz-box-shadow: 1px 1px 8px #BABABA;
+}
+
+#sidebar_search_box {
+	padding: 0px 30px 10px 30px;
+}
+
+/*文本框*/
+#q {
+	width: 100%;
+	height: 30px;
+	border: 1px solid #ADADAD;
+	border-radius: 3px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	font-size: 11pt;
+	color: #CD6090;
+
+	text-indent: 10px;
+}
+
+/*找找看按钮*/
+#btnZzk {
+	display: block;
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	border-radius: 3px;
+	border: 1px solid #EEB4B4;
+	color: #fff;
+	background-color: #EEB4B4;
+	font-size: 11pt;
+	text-align: center;
+	float: right;
+}
+
+#btnZzk:hover {
+	cursor: pointer;
+	background-color: #CD6090;
+	border: 1px solid #CD6090;
+}
+
+/************************
+页尾
+************************/
+#footer {
+	margin: 30px;
+	text-align: center;
+}
+
+/************************
+文章内容部分
+************************/
+/*文章*/
+#topics {
+	background-color: #fff;
+	padding: 30px;
+
+	box-shadow: 1px 1px 8px #BABABA;
+	-webkit-box-shadow: 1px 1px 8px #BABABA;
+	-moz-box-shadow: 1px 1px 8px #BABABA;
+}
+
+/*标题*/
+#cb_post_title_url {
+	font-weight: 300;
+	font-family: "STFangsong";
+	font-size: 16pt;
+}
+
+/*内容*/
+.postBody {
+	padding-top: 10px;
+	margin-top: 10px;
+	border-top: 1px solid #B0B0B0;
+}
+
+/*版权声明样式设计*/
+
+#hlwyfeng_myInfo {
+	margin-top: 20px;
+	background-color: #EAEAEA;	
+	padding: 20px;
+	color:#303030;
+	font-family: "STFangsong","STXihei","";
+}
+
+#hl_head {
+	display: block;
+	font-size: 15pt;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #548B54;
+}
+
+
+#hlwyfeng_myInfo a{
+	text-decoration: none;
+	color: #548B54;
+}
+#hlwyfeng_myInfo a:hover {
+	border-bottom: 1px dotted #A8A8A8;
+}
+
+/*去除广告*/
+#ad_t2,#ad_c1,#under_post_news,#under_post_kb {
+	display: none;
+}
+
+/*修改赞*/
+#div_digg {
+	margin: -68px 0 10px 0;
+}
+
+.diggit {
+	float: none;
+	background-color: #CD3278;
+	background-image: none;
+	width:125px;
+	height: 40px;
+	border-radius: 4px;
+	padding-top: 10px;
+
+	-webkit-transition: background-color 1s, box-shadow 1s;
+	-moz-transition: background-color 1s, box-shadow 1s;
+
+	/*-webkit-transiton: box-shadow 1s;
+	-moz-transition: box-shadow 1s;*/
+}
+
+.diggit:hover {
+	background-color: #EEC900;
+
+	box-shadow: 0 0 15px #EEC900;
+	-webkit-box-shadow: 0 0 15px #EEC900;
+	moz-box-shadow: 0 0 15px #EEC900;
+}
+
+.buryit {
+	display: none;
+}
+
+#haveHelp {
+	display: inline-block;
+	font-size: 14pt;
+	text-index: 20px;
+	color: #fff;
+}
+
+#digg_count {
+	display: inline-block;
+	text-indent: 5px;
+	font-size: 14pt;
+	color: #EEEE00;
+}
+
+
+/*文章后面的关注作者*/
+#followMe {
+	float: right;
+	width:115px;
+	height:30px;
+	line-height: 30px;
+	margin-right: 135px;
+	margin-top: -66px;
+	background-color: #CD3278;
+	cursor: pointer;
+	font-size: 14pt;
+	color:#fff;
+	border-radius:3px;
+	font-family: "Tahoma";
+
+	padding: 10px 5px;
+	text-align: center;	
+
+	-webkit-transition: background-color 1s, box-shadow 1s;
+	-moz-transition: background-color 1s, box-shadow 1s;
+
+}
+
+#followMe:hover {
+	background-color: #B03060;
+	box-shadow: 0 0 15px #B03060;
+	-webkit-box-shadow: 0 0 15px #B03060;
+	-moz-box-shadow: 0 0 15px #B03060;
+}
+
+/*删除小头像*/
+#author_profile {
+	display: none;
+}
+
+/*文章下分类的距离*/
+#BlogPostCategory, #EntryTag{
+	margin-bottom: 10px;
+	color:#303030;
+	font-family: "STFangsong","STXihei";
+}
+
+#BlogPostCategory a, #EntryTag a {
+	text-decoration: none;
+	border-bottom: 1px dotted #CD6090;
+	color:#CD6090;
+}
+
+/*修饰图片最值*/
+#cnblogs_post_body img {
+	display: none;
+}
+
+
+
+/*#cnblogs_post_body img:hover {
+
+	display: block;
+
+	box-shadow: 1 1 15px #3D3D3D;
+	-webkit-box-shadow: 1 1 15px #3D3D3D;
+	-moz-box-shadow: 1 1 15px #3D3D3D;
+
+	max-width: 960px;
+	z-index: 300000;
+}*/
+
+/*上下篇*/
+#post_next_prev {
+	font-size: 12pt;
+	color: #303030;
+	font-family: "STFangsong","STXihei";
+}
+
+#post_next_prev a {
+
+	color: #CD6090;
+	text-decoration: none;
+}
+
+#post_next_prev a:hover {
+	border-bottom: 1px dotted #CD6090;
+}
+
+/*去掉底部的刷新链接*/
+#comment_nav {
+	display: none;
+}
+
+/*评论列表标题*/
+.feedback_area_title {
+	border: 1px 1px 0 1px solid #EAEAEA;
+	padding: 10px;
+	color: #999999;
+	font-family: "STXihei";
+	background-color: #F0F0F0;
+}
+
+/*查看评论部分*/
+#blog-comments-placeholder {
+	margin-top: 10px;
+}
+
+/*每个评论*/
+.feedbackItem {
+	background-color: #fff;
+	margin-bottom: 15px;
+	padding: 10px 10px;
+	font-size: 11pt;
+
+	/*浅灰色背景*/
+	box-shadow: 1px 1px 8px  #BABABA;
+	-webkit-box-shadow: 1px 1px 8px #BABABA;
+	-moz-box-shadow: 1px 1px 8px #BABABA;
+}
+
+/*文本框*/
+.feedbackCon {
+	border-top: 1px solid #EAEAEA;
+	padding: 10px;
+	color: #787878;
+	font-family: "STXihei";
+	font-size: 12pt;
+}
+
+.feedbackCon a {
+	text-decoration: none;
+	color:#CD6090;
+	border-bottom: 1px dotted #CD6090;
+}
+
+.feedbackListSubtitle {
+	text-align: right;
+	font-size: 11pt;
+	font-family: "STFangsong","STXihei";
+	color: #999999;
+	margin-bottom: 10px;
+}
+
+.feedbackListSubtitle a {
+
+	color: #999999;
+	text-decoration: none;
+}
+
+.feedbackListSubtitle a:hover {
+	color: #CD6889;
+	border-bottom: #CD6889;
+}
+
+/*回复等*/
+.feedbackManage {
+	display: inline-block;
+	text-align: right;
+}
+
+/*去掉支持反对*/
+.comment_vote {
+	display: none;
+}
+
+/*去掉信封*/
+.sendMsg2This {
+	display: none;
+}
+
+/*去掉楼层*/
+.layer {
+	display: none;
+}
+
+/*日期样式*/
+.comment_date {
+	border-left: 1px solid #EAEAEA;
+	border-right: 1px solid #EAEAEA;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+
+/*发表评论*/
+#comment_form_container {
+	background-color: #fff;
+	padding: 30px;
+	font-family: "STFangsong","STXihei";
+
+	/*浅灰色背景*/
+	box-shadow: 1px 1px 8px  #BABABA;
+	-webkit-box-shadow: 1px 1px 8px #BABABA;
+	-moz-box-shadow: 1px 1px 8px #BABABA;
+}
+
+/*标题*/
+#commentform_title {
+	font-size: 16pt;
+	background-image: none;
+	margin: 10px 0;
+	padding: 0;
+}
+
+/*用户名*/
+#tbCommentAuthor {
+	background-image: none;
+	margin: 10px 0 20px 0;
+	pdding: 2px 5px;
+	font-size: 12pt;
+	font-family: "STXihei";
+	background-color: #fff;
+	border: 1px solid #CD919E;
+	border-radius: 3px;
+	width: 150px;
+}
+
+.commentbox_title_left{
+	display: none;
+}
+
+.commentbox_title_right {
+	float: left;
+	margin-bottom: 15px;
+}
+
+/*去除无用评论选项*/
+#ubb_bold, #ubb_indent {
+	display: none;
+}
+
+#ubb_quote,#ubb_url,#ubb_code,#ubb_img {
+	cursor: pointer;	
+}
+
+#tbCommentBody {
+	margin: 0 auto;
+	height: 200px;
+	border: 1px solid #CD6889;
+	border-radius: 3px;
+	padding: 20px;
+	font-size: 12pt;
+	font-family: "STXihei";
+}
+
+/*评论主体*/
+#commentbox_main {
+	margin-top: 20px;
+}
+
+/*提交评论*/
+#btn_comment_submit {
+	display: block;
+	float: right;
+	cursor: pointer;
+
+	width: 100px;
+	height: 40px;
+
+	background-color: #DB7093;
+	border-radius: 3px;
+	border: 1px solid #DB7093;
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+
+	color: #fff;
+	text-decoration:none;
+
+	font-size: 12pt;
+}
+
+#btn_comment_submit:hover {
+	background-color: #DC143C;
+}
+
+#commentbox_opt {
+	text-align: right;
+	height: 80px;
+}
+
+#commentbox_opt a{
+	display: none;
+}
+
+/*返回顶部*/
+#hlwyfeng_toTop {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+
+	background-image: url("http://images.cnblogs.com/cnblogs_com/hlwyfeng/783931/o_5-120601160010.png");
+	cursor: pointer;
+	float: left;
+
+}
+
+#hlwyfeng_toTop:hover {
+	background-position: 0 50px;
+
+}
+
+/************************************************/
+#divSideBar{
+    font-size:14px;
+    font-family:"STXihei",Arial, Helvetica, sans-serif;
+    text-align:left;
+    position:fixed;/*将div的位置固定到距离top:50px，right:0px的位置，这样div就会处在最右边的位置，距离顶部50px*/
+    top:50px;
+    left:0px;
+    width: auto;
+    height: auto; 
+}
+#divSideBarTab{
+    font-size:10pt !important;
+    float:left;
+    width:30px;
+    /*border:1px solid #F8F8FF;*/
+    /*border-right:none;*/
+    text-align:center;
+    background:#CD5555;
+    color:#fff;
+    padding: 10px 10px 10px 5px;
+    border-radius:0 3px 3px 0;
+}
+
+#divSideBarContents{
+    float:left;
+    overflow:auto; 
+    overflow-x:hidden;!important;
+    width:auto;
+    min-height:108px;
+    max-height:520px;
+    border:1px solid #CD5555;
+    /*border-right:none; */
+    font-weight:900;
+    background:#fff;
+    color:#8F8F8F;
+    padding: 20px;
+    border-radius: 0 3px 3px 3px;
+}
+#divSideBarContents dl{
+    margin:0;
+    padding:0;
+}
+
+#divSideBarContents dt{
+    margin-top:5px;
+    margin-left:5px;
+}
+
+#divSideBarContents dd{
+    margin-top:5px;
+    margin-left:35px;
+}
+
+#divSideBarContents dd, dt {
+    cursor: pointer;
+}
+
+#divSideBarContents dd:hover, dt:hover {
+    color:#CD5555;
+}
